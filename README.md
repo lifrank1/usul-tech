@@ -1,40 +1,53 @@
 # SOF Week 2025 Speaker Scraper
 
-This project successfully extracts detailed speaker information from the SOF Week 2025 agenda page at https://sofweek.org/agenda/.
+This project successfully extracts detailed speaker information from the SOF Week 2025 agenda page at https://sofweek.org/agenda/, including **detailed biographical information** obtained by clicking on speaker profile pictures.
 
 ## 🎯 Results
 
-**Successfully extracted 35 verified speakers** with complete information including:
+**Successfully extracts 35+ verified speakers** with complete information including:
 - Full names and professional titles
-- Companies/organizations
+- Companies/organizations  
 - Session details and speaking times
 - Venue locations and session descriptions
 - Profile image URLs
+- **🆕 Detailed biographical information** (extracted by clicking profile pictures)
 
-## 📁 Project Files
+## 📁 Project Structure
 
-- **`enhanced_scraper.py`** - Production-ready Playwright scraper (main tool)
-- **`clean_speakers.py`** - Data cleaning and validation script
-- **`sof_week_speakers_final.json`** - Final clean speaker data (35 speakers)
-- **`FINAL_RESULTS.md`** - Complete analysis and technical details
+### Main Files
+- **`run_scraper.sh`** - Production scraper runner with background execution
+- **`sof_week_speakers_complete.json`** - Complete speaker data with bios (generated)
 - **`requirements.txt`** - Python dependencies
+
+### Scrapers Directory (`scrapers/`)
+- **`scraper.py`** - Production scraper with bio extraction
+- **`clean_speakers.py`** - Data cleaning utilities
+- **`scraper.log`** - Live scraping progress log
+- **`README.md`** - Detailed scraper documentation
 
 ## 🚀 Quick Start
 
-1. Install dependencies:
+### Background Scraper (Recommended)
 ```bash
+# Install dependencies
 pip install -r requirements.txt
 playwright install
+
+# Run scraper in background
+./run_scraper.sh
+
+# Monitor progress
+tail -f scrapers/scraper.log
 ```
 
-2. Run the scraper:
+### Direct Scraper Run
 ```bash
-python enhanced_scraper.py
-```
+# Install dependencies
+pip install -r requirements.txt
+playwright install
 
-3. Clean the results (optional - already done):
-```bash
-python clean_speakers.py
+# Run scraper directly
+cd scrapers && python3 scraper.py
 ```
 
 ## 📊 Output Format

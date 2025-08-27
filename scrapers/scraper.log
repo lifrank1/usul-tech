@@ -1,0 +1,274 @@
+2025-08-27 19:31:03,443 - INFO - 🚀 Starting FIXED background SOF Week speaker scraping...
+2025-08-27 19:31:03,822 - INFO - 🌐 Loading SOF Week agenda...
+2025-08-27 19:31:20,806 - INFO - 📄 Loaded 3096560 characters of content
+2025-08-27 19:31:20,845 - INFO - 🔍 Found 41 speaker cards to process
+2025-08-27 19:31:20,845 - INFO - 🖱️ [1/41] Attempting bio extraction for: Mr. Jeff Pottinger
+2025-08-27 19:31:24,147 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:31:29,170 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:31:29,175 - INFO -     📖 Extracted 616 chars from modal text
+2025-08-27 19:31:29,175 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:31:29,175 - INFO -   ✅ Got bio (616 chars)
+2025-08-27 19:31:31,413 - INFO - 🖱️ [2/41] Attempting bio extraction for: Mr. Matt Stevens
+2025-08-27 19:31:34,646 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:31:39,664 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:31:39,668 - INFO -     📖 Extracted 1382 chars from modal text
+2025-08-27 19:31:39,668 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:31:39,668 - INFO -   ✅ Got bio (1382 chars)
+2025-08-27 19:31:41,863 - INFO - 🖱️ [3/41] Attempting bio extraction for: Mr. William "Bill" Innes
+2025-08-27 19:31:45,099 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:31:50,117 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:31:50,119 - INFO -     📖 Extracted 1498 chars from modal text
+2025-08-27 19:31:50,119 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:31:50,119 - INFO -   ✅ Got bio (1498 chars)
+2025-08-27 19:31:52,292 - INFO - 🖱️ [4/41] Attempting bio extraction for: Ms. Meaghan Keeler
+2025-08-27 19:31:55,508 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:32:00,525 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:32:00,529 - INFO -     📖 Extracted 1068 chars from modal text
+2025-08-27 19:32:00,529 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:32:00,529 - INFO -   ✅ Got bio (1068 chars)
+2025-08-27 19:32:02,709 - INFO - 🖱️ [5/41] Attempting bio extraction for: Ms. Leslie Babich
+2025-08-27 19:32:05,916 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:32:10,926 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:32:10,928 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:32:10,928 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:32:10,928 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:32:13,124 - INFO - 🖱️ [6/41] Attempting bio extraction for: Mr. Glen Cullen
+2025-08-27 19:32:16,314 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:32:21,325 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:32:22,244 - INFO -     🖱️ Clicked speaker name
+2025-08-27 19:32:27,262 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:32:27,659 - INFO -   ⚠️ No bio found
+2025-08-27 19:32:29,823 - INFO - 🖱️ [7/41] Attempting bio extraction for: Mr. Travis Owens
+2025-08-27 19:32:33,015 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:32:38,023 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:32:38,025 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:32:38,025 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:32:38,025 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:32:40,228 - INFO - 🖱️ [10/41] Attempting bio extraction for: Ms. Lisa R. Sanders
+2025-08-27 19:32:43,433 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:32:48,454 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:32:48,458 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:32:48,458 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:32:48,458 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:32:50,642 - INFO - 🖱️ [11/41] Attempting bio extraction for: Ms. Melissa Johnson
+2025-08-27 19:32:53,843 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:32:58,853 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:32:58,857 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:32:58,857 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:32:58,858 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:33:01,040 - INFO - 🖱️ [12/41] Attempting bio extraction for: Colonel Clarence E. Burton, Jr.
+2025-08-27 19:33:04,257 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:33:09,268 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:33:09,270 - INFO -     📖 Extracted 1364 chars from modal text
+2025-08-27 19:33:09,271 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:33:09,271 - INFO -   ✅ Got bio (1364 chars)
+2025-08-27 19:33:11,458 - INFO - 🖱️ [13/41] Attempting bio extraction for: Mr. John Burnham
+2025-08-27 19:33:14,659 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:33:19,672 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:33:19,675 - INFO -     📖 Extracted 1294 chars from modal text
+2025-08-27 19:33:19,675 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:33:19,675 - INFO -   ✅ Got bio (1294 chars)
+2025-08-27 19:33:21,856 - INFO - 🖱️ [14/41] Attempting bio extraction for: Mayor Jane Castor
+2025-08-27 19:33:25,036 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:33:30,048 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:33:30,961 - INFO -     🖱️ Clicked speaker name
+2025-08-27 19:33:35,971 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:33:36,363 - INFO -   ⚠️ No bio found
+2025-08-27 19:33:38,545 - INFO - 🖱️ [15/41] Attempting bio extraction for: The Honorable Pete Hegseth
+2025-08-27 19:33:41,721 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:33:46,731 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:33:46,733 - INFO -     📖 Extracted 799 chars from modal text
+2025-08-27 19:33:46,733 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:33:46,733 - INFO -   ✅ Got bio (799 chars)
+2025-08-27 19:33:48,913 - INFO - 🖱️ [16/41] Attempting bio extraction for: General Bryan P. Fenton
+2025-08-27 19:33:52,107 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:33:57,116 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:33:57,119 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:33:57,119 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:33:57,119 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:33:59,280 - INFO - 🖱️ [17/41] Attempting bio extraction for: Command Sergeant Major Shane Shorter
+2025-08-27 19:34:02,476 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:34:07,487 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:34:07,490 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:34:07,491 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:34:07,491 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:34:09,665 - INFO - 🖱️ [18/41] Attempting bio extraction for: Ms. Melissa Johnson
+2025-08-27 19:34:12,859 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:34:17,868 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:34:17,871 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:34:17,871 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:34:17,871 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:34:20,047 - INFO - 🖱️ [19/41] Attempting bio extraction for: Ms. Sarah P. Roder, CFEI
+2025-08-27 19:34:23,201 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:34:28,218 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:34:28,225 - INFO -     📖 Extracted 645 chars from modal text
+2025-08-27 19:34:28,225 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:34:28,225 - INFO -   ✅ Got bio (645 chars)
+2025-08-27 19:34:30,417 - INFO - 🖱️ [20/41] Attempting bio extraction for: Sergeant Major Gregory Keller
+2025-08-27 19:34:33,616 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:34:38,626 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:34:39,550 - INFO -     🖱️ Clicked speaker name
+2025-08-27 19:34:44,562 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:34:44,968 - INFO -   ⚠️ No bio found
+2025-08-27 19:34:47,146 - INFO - 🖱️ [21/41] Attempting bio extraction for: Mr. Arthur Coon
+2025-08-27 19:34:50,343 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:34:55,354 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:34:56,299 - INFO -     🖱️ Clicked speaker name
+2025-08-27 19:35:01,311 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:35:01,730 - INFO -   ⚠️ No bio found
+2025-08-27 19:35:03,915 - INFO - 🖱️ [22/41] Attempting bio extraction for: Ms. Liliana Roman
+2025-08-27 19:35:07,111 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:35:12,123 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:35:12,126 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:35:12,126 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:35:12,126 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:35:14,312 - INFO - 🖱️ [23/41] Attempting bio extraction for: Mr. Peter Bergen
+2025-08-27 19:35:17,515 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:35:22,532 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:35:22,536 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:35:22,536 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:35:22,537 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:35:24,719 - INFO - 🖱️ [25/41] Attempting bio extraction for: Dr. Keenan Yoho
+2025-08-27 19:35:27,932 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:35:32,947 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:35:32,950 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:35:32,950 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:35:32,950 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:35:35,152 - INFO - 🖱️ [26/41] Attempting bio extraction for: Ms. Emily Harding
+2025-08-27 19:35:38,354 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:35:43,372 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:35:43,375 - INFO -     📖 Extracted 1031 chars from modal text
+2025-08-27 19:35:43,375 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:35:43,375 - INFO -   ✅ Got bio (1031 chars)
+2025-08-27 19:35:45,586 - INFO - 🖱️ [27/41] Attempting bio extraction for: Colonel Jesse Marsalis
+2025-08-27 19:35:48,794 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:35:53,813 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:35:53,817 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:35:53,817 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:35:53,817 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:35:56,033 - INFO - 🖱️ [28/41] Attempting bio extraction for: Mr. Joel J. Fox
+2025-08-27 19:35:59,266 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:36:04,281 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:36:04,283 - INFO -     📖 Extracted 1052 chars from modal text
+2025-08-27 19:36:04,283 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:36:04,283 - INFO -   ✅ Got bio (1052 chars)
+2025-08-27 19:36:06,499 - INFO - 🖱️ [29/41] Attempting bio extraction for: Mr. Kareem Sykes
+2025-08-27 19:36:09,732 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:36:14,751 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:36:14,755 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:36:14,755 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:36:14,755 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:36:16,967 - INFO - 🖱️ [30/41] Attempting bio extraction for: Ms. Juliet Funt
+2025-08-27 19:36:20,214 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:36:25,234 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:36:25,237 - INFO -     📖 Extracted 514 chars from modal text
+2025-08-27 19:36:25,237 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:36:25,237 - INFO -   ✅ Got bio (514 chars)
+2025-08-27 19:36:27,450 - INFO - 🖱️ [31/41] Attempting bio extraction for: Mr. John Burnham
+2025-08-27 19:36:30,683 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:36:35,703 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:36:35,707 - INFO -     📖 Extracted 1294 chars from modal text
+2025-08-27 19:36:35,707 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:36:35,707 - INFO -   ✅ Got bio (1294 chars)
+2025-08-27 19:36:37,913 - INFO - 🖱️ [32/41] Attempting bio extraction for: Lieutenant General (Ret.) Giovanni Tuck
+2025-08-27 19:36:41,101 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:36:46,122 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:36:46,126 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:36:46,127 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:36:46,127 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:36:48,310 - INFO - 🖱️ [33/41] Attempting bio extraction for: Captain Jared W. Wyrick
+2025-08-27 19:36:51,522 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:36:56,537 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:36:57,469 - INFO -     🖱️ Clicked speaker name
+2025-08-27 19:37:02,481 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:37:02,874 - INFO -   ⚠️ No bio found
+2025-08-27 19:37:05,043 - INFO - 🖱️ [34/41] Attempting bio extraction for: Mr. Michael Quinn
+2025-08-27 19:37:08,231 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:37:13,239 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:37:13,240 - INFO -     📖 Extracted 253 chars from modal text
+2025-08-27 19:37:13,241 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:37:13,241 - INFO -   ✅ Got bio (253 chars)
+2025-08-27 19:37:15,446 - INFO - 🖱️ [35/41] Attempting bio extraction for: Ms. Alison Messick
+2025-08-27 19:37:18,656 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:37:23,667 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:37:23,670 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:37:23,670 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:37:23,670 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:37:25,843 - INFO - 🖱️ [36/41] Attempting bio extraction for: Ms. Jennifer Zientz, MS, CCC-SLP
+2025-08-27 19:37:29,040 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:37:34,052 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:37:34,055 - INFO -     📖 Extracted 1227 chars from modal text
+2025-08-27 19:37:34,055 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:37:34,055 - INFO -   ✅ Got bio (1227 chars)
+2025-08-27 19:37:36,227 - INFO - 🖱️ [37/41] Attempting bio extraction for: Mr. Jeffery "JD" Barnes
+2025-08-27 19:37:39,428 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:37:44,439 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:37:45,358 - INFO -     🖱️ Clicked speaker name
+2025-08-27 19:37:50,373 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:37:50,773 - INFO -   ⚠️ No bio found
+2025-08-27 19:37:52,943 - INFO - 🖱️ [38/41] Attempting bio extraction for: Ms. Heidi Grant
+2025-08-27 19:37:56,138 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:38:01,149 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:38:01,151 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:38:01,151 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:38:01,151 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:38:03,325 - INFO - 🖱️ [39/41] Attempting bio extraction for: Ms. Lisa R. Sanders
+2025-08-27 19:38:06,526 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:38:11,538 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:38:11,543 - INFO -     📖 Extracted 1503 chars from modal text
+2025-08-27 19:38:11,543 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:38:11,543 - INFO -   ✅ Got bio (1503 chars)
+2025-08-27 19:38:13,742 - INFO - 🖱️ [40/41] Attempting bio extraction for: Dr. John Edgar Caterson
+2025-08-27 19:38:16,942 - INFO -     🖱️ Clicked profile image
+2025-08-27 19:38:21,966 - INFO -     ✅ Found visible modal: [data-cvent-id="speaker-detail-modal"]
+2025-08-27 19:38:21,970 - INFO -     📖 Extracted 1011 chars from modal text
+2025-08-27 19:38:21,970 - INFO -     📖 Extracted bio from modal
+2025-08-27 19:38:21,970 - INFO -   ✅ Got bio (1011 chars)
+2025-08-27 19:38:24,177 - INFO - 🔍 Looking for additional speakers in session content...
+2025-08-27 19:38:24,193 - INFO -   ✅ Found additional speaker: ms. This event
+2025-08-27 19:38:24,196 - INFO -   ✅ Found additional speaker: General Session Opening
+2025-08-27 19:38:24,196 - INFO -   ✅ Found additional speaker: Mayor of Tampa
+2025-08-27 19:38:24,196 - INFO -   ✅ Found additional speaker: general session launches
+2025-08-27 19:38:24,197 - INFO -   ✅ Found additional speaker: General Bryan Fenton
+2025-08-27 19:38:24,199 - INFO -   ✅ Found additional speaker: ms. The portfolio
+2025-08-27 19:38:24,199 - INFO -   ✅ Found additional speaker: ms. Enterprise Information
+2025-08-27 19:38:24,200 - INFO -   ✅ Found additional speaker: ms. Much of
+2025-08-27 19:38:24,202 - INFO -   ✅ Found additional speaker: General Session Closing
+2025-08-27 19:38:24,203 - INFO -   ✅ Found additional speaker: ms. USSOCOM SOF
+2025-08-27 19:38:24,204 - INFO - 🔄 After deduplication: 44 unique speakers
+2025-08-27 19:38:24,204 - INFO - 🎯 Scraping completed! Found 44 speakers, 31 with detailed bios
+2025-08-27 19:38:24,250 - INFO - 
+🎯 FIXED SCRAPING COMPLETE!
+2025-08-27 19:38:24,250 - INFO - 📊 Total speakers found: 44
+2025-08-27 19:38:24,250 - INFO - 📝 Speakers with detailed bios: 31
+2025-08-27 19:38:24,251 - INFO - 💾 Saved 44 speakers to ../sof_week_speakers_complete.json
+2025-08-27 19:38:24,251 - INFO - 
+👥 SPEAKERS WITH DETAILED BIOS:
+2025-08-27 19:38:24,251 - INFO - 1. Mr. Jeff Pottinger (Co-Founder)
+2025-08-27 19:38:24,251 - INFO - 2. Mr. Matt Stevens (Chief Executive Officer)
+2025-08-27 19:38:24,251 - INFO - 3. Mr. William "Bill" Innes (Deputy Director, Acquisition, SOF AT&L)
+2025-08-27 19:38:24,251 - INFO - 4. Ms. Meaghan Keeler (Chief Operating Officer)
+2025-08-27 19:38:24,251 - INFO - 5. Ms. Leslie Babich (Director)
+2025-08-27 19:38:24,251 - INFO - 6. Mr. Travis Owens (Chief, Visual Multimedia Support Division)
+2025-08-27 19:38:24,251 - INFO - 7. Ms. Lisa R. Sanders (Director, Science and Technology Directorate)
+2025-08-27 19:38:24,251 - INFO - 8. Ms. Melissa Johnson (Acquisition Executive)
+2025-08-27 19:38:24,251 - INFO - 9. Colonel Clarence E. Burton, Jr. (Director of Procurement)
+2025-08-27 19:38:24,251 - INFO - 10. Mr. John Burnham (CAPTAIN, USN (Ret.); Former Deputy Assistant Secretary of Defense)
+2025-08-27 19:38:24,251 - INFO - 11. The Honorable Pete Hegseth (Secretary of Defense)
+2025-08-27 19:38:24,251 - INFO - 12. General Bryan P. Fenton (Commander)
+2025-08-27 19:38:24,251 - INFO - 13. Command Sergeant Major Shane Shorter (Senior Enlisted Leader)
+2025-08-27 19:38:24,251 - INFO - 14. Ms. Sarah P. Roder, CFEI (Director of Partnerships and Member Engagement)
+2025-08-27 19:38:24,251 - INFO - 15. Ms. Liliana Roman (Deputy Director, Enterprise Information Systems (EIS), SOF AT&L)
+2025-08-27 19:38:24,251 - INFO - 16. Mr. Peter Bergen (Vice President Global Studies & Fellows, New America; Professor, Arizona State University;)
+2025-08-27 19:38:24,251 - INFO - 17. Dr. Keenan Yoho (Vice President and Board Member)
+2025-08-27 19:38:24,251 - INFO - 18. Ms. Emily Harding (Director of Intelligence, National Security Program; Vice President, Defense & Security Department)
+2025-08-27 19:38:24,251 - INFO - 19. Colonel Jesse Marsalis (Program Executive Officer, PEO SOF Support Activity (SOFSA))
+2025-08-27 19:38:24,251 - INFO - 20. Mr. Joel J. Fox (Special Operations Forces Support Activity Program Manager - Expeditionary Support)
+2025-08-27 19:38:24,251 - INFO - 21. Mr. Kareem Sykes (Industry & Engagement Program Manager)
+2025-08-27 19:38:24,251 - INFO - 22. Ms. Juliet Funt (Founder and CEO)
+2025-08-27 19:38:24,251 - INFO - 23. Lieutenant General (Ret.) Giovanni Tuck (Former Director of Logistics (J4))
+2025-08-27 19:38:24,251 - INFO - 24. Mr. Michael Quinn (Founder and Chief Growth Officer)
+2025-08-27 19:38:24,251 - INFO - 25. Ms. Alison Messick (Chief Programs Officer)
+2025-08-27 19:38:24,251 - INFO - 26. Ms. Jennifer Zientz, MS, CCC-SLP (Director of Programs, Head of Clinical Services)
+2025-08-27 19:38:24,251 - INFO - 27. Ms. Heidi Grant (Former Director of Defense Security Cooperation Agency)
+2025-08-27 19:38:24,251 - INFO - 28. Dr. John Edgar Caterson (U.S. Special Operations Command SOCH ESME, SOCH Program Director)
