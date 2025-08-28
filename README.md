@@ -36,9 +36,6 @@ usul2/
 │   ├── public/                            # Static assets
 │   ├── start.sh                           # Frontend startup script
 │   └── README.md                          # Frontend documentation
-├── cli.py                                  # Command-line interface
-├── demo.py                                 # Demo script
-├── start.sh                                # Interactive startup script
 └── README.md                               # This file
 ```
 
@@ -47,55 +44,34 @@ usul2/
 ### 1. Install Dependencies
 
 ```bash
+# Backend dependencies
+cd backend
 pip install -r requirements.txt
+
+# Frontend dependencies
+cd ../frontend
+npm install
 ```
 
-### 2. Run the Demo
-
-```bash
-python demo.py
-```
-
-This will show you how the system works with several example queries.
-
-### 3. Try Your Own Queries
-
-```bash
-python cli.py "I'm a drone contractor, find me contacts that have experience in that field"
-```
-
-### 4. Start the Web API
+### 2. Start the Backend Server
 
 ```bash
 cd backend
 python run.py
 ```
 
-Then visit `http://localhost:8000` for the interactive API documentation.
-
-### 5. Start the Frontend UI
+### 3. Start the Frontend UI
 
 ```bash
 cd frontend
 ./start.sh
 ```
 
-Then visit `http://localhost:3001` for the clean, minimalist UI.
+### 4. Open Your Browser
+
+Visit `http://localhost:3001` to use the recommendation engine.
 
 ## 📖 Usage Examples
-
-### Command Line Interface
-
-```bash
-# Basic recommendation
-python cli.py "Looking for cybersecurity experts"
-
-# Get more recommendations
-python cli.py "Need acquisition specialists" --top-k 10
-
-# Use different data file
-python cli.py "Veteran transition experts" --data-file path/to/data.json
-```
 
 ### Web API
 
