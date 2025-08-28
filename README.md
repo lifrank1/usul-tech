@@ -1,103 +1,236 @@
-# SOF Week 2025 Speaker Scraper
+# SOF Week Speaker Recommendation Engine
 
-This project successfully extracts detailed speaker information from the SOF Week 2025 agenda page at https://sofweek.org/agenda/, including **detailed biographical information** obtained by clicking on speaker profile pictures.
+An AI-powered recommendation engine that uses vector embeddings and similarity search to match natural language queries with the most relevant speakers from SOF Week 2025. Built entirely with free and open-source tools.
 
-## 🎯 Results
+## 🚀 Features
 
-**Successfully extracts 35+ verified speakers** with complete information including:
-- Full names and professional titles
-- Companies/organizations  
-- Session details and speaking times
-- Venue locations and session descriptions
-- Profile image URLs
-- **🆕 Detailed biographical information** (extracted by clicking profile pictures)
+- **Semantic Search**: Understands the meaning behind queries, not just keywords
+- **Natural Language Queries**: Ask questions like "I'm a drone contractor, find me contacts that have experience in that field"
+- **Fast Response**: Vector similarity search provides results in milliseconds
+- **Comprehensive Results**: Includes relevance scores, explanations, and contact information
+- **Multiple Interfaces**: Command-line, API, and demo modes
+
+## 🛠️ Technology Stack
+
+- **Embedding Model**: Sentence Transformers (`all-MiniLM-L6-v2`) - Free, lightweight, and fast
+- **Vector Database**: ChromaDB - In-memory storage for simplicity
+- **Web Framework**: FastAPI - Modern, fast Python web framework
+- **All Tools**: 100% free and open source
 
 ## 📁 Project Structure
 
-### Main Files
-- **`run_scraper.sh`** - Production scraper runner with background execution
-- **`sof_week_speakers_complete.json`** - Complete speaker data with bios (generated)
-- **`requirements.txt`** - Python dependencies
-
-### Scrapers Directory (`scrapers/`)
-- **`scraper.py`** - Production scraper with bio extraction
-- **`clean_speakers.py`** - Data cleaning utilities
-- **`scraper.log`** - Live scraping progress log
-- **`README.md`** - Detailed scraper documentation
+```
+usul2/
+├── data/
+│   └── sof_week_speakers_complete.json    # Speaker data
+├── backend/                                # Backend server
+│   ├── __init__.py                        # Package initialization
+│   ├── server.py                          # Main FastAPI server
+│   ├── speaker_recommendation_engine.py   # Core recommendation engine
+│   ├── run.py                             # Server runner
+│   ├── requirements.txt                   # Backend dependencies
+│   └── README.md                          # Backend documentation
+├── cli.py                                  # Command-line interface
+├── demo.py                                 # Demo script
+├── start.sh                                # Interactive startup script
+└── README.md                               # This file
+```
 
 ## 🚀 Quick Start
 
-### Background Scraper (Recommended)
+### 1. Install Dependencies
+
 ```bash
-# Install dependencies
 pip install -r requirements.txt
-playwright install
-
-# Run scraper in background
-./run_scraper.sh
-
-# Monitor progress
-tail -f scrapers/scraper.log
 ```
 
-### Direct Scraper Run
+### 2. Run the Demo
+
 ```bash
-# Install dependencies
-pip install -r requirements.txt
-playwright install
-
-# Run scraper directly
-cd scrapers && python3 scraper.py
+python demo.py
 ```
 
-## 📊 Output Format
+This will show you how the system works with several example queries.
 
-The final JSON contains structured speaker data:
+### 3. Try Your Own Queries
 
-```json
-{
-  "scraped_at": "2025-08-27T19:03:36",
-  "total_speakers": 35,
-  "source_url": "https://sofweek.org/agenda/",
-  "speakers": [
-    {
-      "name": "The Honorable Pete Hegseth",
-      "title": "Secretary of Defense",
-      "company": "U.S. Department of Defense",
-      "session_title": "Keynote Address: U.S. Secretary of Defense",
-      "speaking_time": "8:45 AM-9:15 AM",
-      "location": "JW Marriott: Tampa Bay Ballroom",
-      "session_description": "...",
-      "image_url": "https://custom.cvent.com/...",
-      "extraction_method": "speaker_card"
-    }
-  ]
-}
+```bash
+python cli.py "I'm a drone contractor, find me contacts that have experience in that field"
 ```
 
-## 🔧 Technical Solution
+### 4. Start the Web API
 
-The scraper handles the complex dynamic content loading:
+```bash
+cd backend
+python run.py
+```
 
-1. **Accesses Cvent iframe**: The agenda content is embedded via Cvent's platform
-2. **Waits for JavaScript**: Content loads dynamically after page load
-3. **Dual extraction**: Finds speakers in both speaker cards and session descriptions
-4. **Smart deduplication**: Merges information and removes duplicates
-5. **Data validation**: Filters out invalid entries and cleans data
+Then visit `http://localhost:8000` for the interactive API documentation.
 
-## 🏆 Key Speakers Found
+## 📖 Usage Examples
 
-- **The Honorable Pete Hegseth** - Secretary of Defense
-- **General Bryan P. Fenton** - USSOCOM Commander
-- **Mayor Jane Castor** - Tampa Mayor
-- **Mr. Jeff Pottinger** - ReLAUNCH Advisors Co-Founder
-- **Mr. Matt Stevens** - The Honor Foundation CEO
-- **30+ additional speakers** with full details
+### Command Line Interface
 
-## ⚙️ Why Playwright Won
+```bash
+# Basic recommendation
+python cli.py "Looking for cybersecurity experts"
 
-Playwright proved superior to Selenium and simple HTTP requests because:
-- ✅ Handles modern JavaScript-heavy websites
-- ✅ Reliable iframe content access
-- ✅ Better element detection and parsing
-- ✅ No browser driver compatibility issues
+# Get more recommendations
+python cli.py "Need acquisition specialists" --top-k 10
+
+# Use different data file
+python cli.py "Veteran transition experts" --data-file path/to/data.json
+```
+
+### Web API
+
+```bash
+# Start the server
+cd backend
+python run.py
+
+# Then use these endpoints:
+GET  /                    # Health check
+POST /recommend           # Get speaker recommendations
+GET  /speakers            # List all speakers
+GET  /speakers/search     # Search by keyword
+GET  /speakers/{name}     # Get specific speaker
+GET  /stats               # Database statistics
+```
+
+### Example API Request
+
+```bash
+curl -X POST "http://localhost:8000/recommend" \
+     -H "Content-Type: application/json" \
+     -d '{"query": "I need contacts in drone technology", "top_k": 5}'
+```
+
+## 🔍 How It Works
+
+### Phase 1: Indexing Pipeline
+
+1. **Data Loading**: Loads speaker data from JSON file
+2. **Document Construction**: Combines all speaker fields into coherent text documents
+3. **Embedding Generation**: Uses Sentence Transformers to create vector embeddings
+4. **Vector Storage**: Stores embeddings in ChromaDB for fast similarity search
+
+### Phase 2: Retrieval Pipeline
+
+1. **Query Processing**: Converts user query to vector embedding
+2. **Similarity Search**: Finds most similar speaker documents using cosine similarity
+3. **Result Ranking**: Ranks results by relevance score
+4. **Explanation Generation**: Provides human-readable explanations for each recommendation
+
+### Example Document Structure
+
+```
+Name: Mr. Jeff Pottinger | Title: Co-Founder | Company: ReLAUNCH Advisors | 
+Session: The Honor Foundation Transition Seminar | Session Description: This one-day seminar... | 
+Bio: Mr. Jeff Pottinger is a career transition expert...
+```
+
+## 📊 Sample Queries and Results
+
+### Query: "I'm a drone contractor, find me contacts that have experience in that field"
+
+**Expected Results:**
+- Speakers with aviation/aircraft experience
+- Technology and acquisition specialists
+- SOF AT&L personnel
+- Industry contractors in related fields
+
+### Query: "Looking for experts in cybersecurity and information systems"
+
+**Expected Results:**
+- Enterprise Information Systems (EIS) directors
+- Cybersecurity program managers
+- Technology acquisition specialists
+- Information security experts
+
+### Query: "Need contacts in acquisition and procurement"
+
+**Expected Results:**
+- SOF AT&L acquisition executives
+- Procurement directors
+- Program managers
+- Contracting officers
+
+## ⚡ Performance Characteristics
+
+- **Initialization**: ~2-5 seconds (includes model loading and indexing)
+- **Query Response**: <100ms for typical queries
+- **Memory Usage**: ~200-500MB (depending on model size)
+- **Scalability**: Designed for small to medium datasets (44 speakers in this case)
+
+## 🔧 Customization
+
+### Adding New Data Sources
+
+1. Update the `_create_speaker_documents()` method in `SpeakerRecommendationEngine`
+2. Modify document construction logic for your data structure
+3. Adjust embedding model if needed for your domain
+
+### Changing the Embedding Model
+
+```python
+# In speaker_recommendation_engine.py
+self.embedding_model = SentenceTransformer('your-model-name')
+```
+
+Popular alternatives:
+- `all-mpnet-base-v2` - Higher quality, slower
+- `paraphrase-MiniLM-L3-v2` - Faster, smaller
+- `multi-qa-MiniLM-L6-cos-v1` - Optimized for Q&A
+
+### Modifying Relevance Scoring
+
+Update the `_generate_relevance_explanation()` method to customize how relevance is calculated and explained.
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+1. **Import Errors**: Make sure all dependencies are installed
+2. **Memory Issues**: The embedding model requires ~200MB RAM
+3. **Slow Initialization**: First run downloads the model (~90MB)
+4. **No Results**: Try rephrasing your query or using different keywords
+
+### Debug Mode
+
+Enable detailed logging by modifying the logging level in the engine:
+
+```python
+logging.basicConfig(level=logging.DEBUG)
+```
+
+## 📈 Future Enhancements
+
+- **Hybrid Search**: Combine semantic search with keyword matching
+- **User Feedback**: Learn from user interactions to improve recommendations
+- **Multi-modal**: Include image analysis for speaker photos
+- **Real-time Updates**: Support for live data updates
+- **Advanced Filtering**: Filter by company, location, session type, etc.
+
+## 🤝 Contributing
+
+This is a prototype project. Feel free to:
+- Report bugs
+- Suggest improvements
+- Add new features
+- Optimize performance
+
+## 📄 License
+
+This project uses open-source tools and is provided as-is for educational and prototyping purposes.
+
+## 🆘 Support
+
+For issues or questions:
+1. Check the troubleshooting section above
+2. Review the code comments for implementation details
+3. Test with the demo script to verify functionality
+
+---
+
+**Built with ❤️ using free and open-source tools**
