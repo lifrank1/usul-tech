@@ -13,7 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
 
-from .speaker_recommendation_engine import SpeakerRecommendationEngine
+from speaker_recommendation_engine import SpeakerRecommendationEngine
 
 # Configure logging
 logging.basicConfig(
