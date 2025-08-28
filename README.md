@@ -30,6 +30,12 @@ usul2/
 │   ├── run.py                             # Server runner
 │   ├── requirements.txt                   # Backend dependencies
 │   └── README.md                          # Backend documentation
+├── frontend/                               # React UI
+│   ├── package.json                       # Node.js dependencies
+│   ├── src/                               # React source code
+│   ├── public/                            # Static assets
+│   ├── start.sh                           # Frontend startup script
+│   └── README.md                          # Frontend documentation
 ├── cli.py                                  # Command-line interface
 ├── demo.py                                 # Demo script
 ├── start.sh                                # Interactive startup script
@@ -66,6 +72,15 @@ python run.py
 ```
 
 Then visit `http://localhost:8000` for the interactive API documentation.
+
+### 5. Start the Frontend UI
+
+```bash
+cd frontend
+./start.sh
+```
+
+Then visit `http://localhost:3001` for the clean, minimalist UI.
 
 ## 📖 Usage Examples
 
